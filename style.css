@@ -25,6 +25,7 @@ header{
     border: solid black 1px;
     text-align: center;
     font-size: 8rem;
+    background-color: white;
 }
 
 .cell:hover{
