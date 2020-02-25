@@ -27,6 +27,10 @@ header{
     font-size: 8rem;
 }
 
+.cell:hover{
+    background-color: lightblue;
+}
+
 /* Smartphones ----------- */
 @media only screen
 and (min-width : 320px)
