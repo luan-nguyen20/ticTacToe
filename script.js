@@ -8,6 +8,8 @@ cells.forEach(cell => {
     });
 });
 
+restartBtn.addEventListener('click', restart);
+
 let val = ' ';
 function play(e){
     if(e.target.textContent === ' '){ // if cell is blank
@@ -18,9 +20,9 @@ function play(e){
 } 
 
 function checkVictory(){
-    const winCombo = [[0,1,2],[3,4,5],[6,7,8],
-                    [0,3,6],[1,4,7],[2,5,8],
-                    [0,4,8],[2,4,6]];
+    const winCombo = [[0,1,2],[3,4,5],[6,7,8], // 3 rows
+                    [0,3,6],[1,4,7],[2,5,8], // 3 cols
+                    [0,4,8],[2,4,6]]; // 2 diagonals
 
     winCombo.forEach(combo => {
         if(cells[combo[0]].textContent===cells[combo[1]].textContent 
@@ -32,4 +34,13 @@ function checkVictory(){
             });
         }
     })
+}
+
+function restart(){
+    val = ' ';
+    message.textContent = ' ';
+    cells.forEach(cell => {
+        cell.textContent = ' ';
+        cell.classList.remove("disabled");
+    });
 }
