@@ -31,6 +31,28 @@ header{
     background-color: lightblue;
 }
 
+.message{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.restartBtn{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.restartBtn button{
+    font-weight: bold;
+    font-size: 2rem;
+    height: 5rem;
+    width: 15rem;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
 /* Smartphones ----------- */
 @media only screen
 and (min-width : 320px)

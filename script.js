@@ -1,4 +1,6 @@
 const cells = Array.from(document.querySelectorAll('.cell'));
+const message = document.querySelector('.message');
+const restartBtn = document.querySelector('.restartBtn');
 
 cells.forEach(cell => {
     cell.addEventListener('click',e => {
@@ -24,7 +26,10 @@ function checkVictory(){
         if(cells[combo[0]].textContent===cells[combo[1]].textContent 
             && cells[combo[1]].textContent===cells[combo[2]].textContent 
             && cells[combo[0]].textContent !== " "){
-            alert("Player " + val + " wins!");
+            message.textContent = "Player " + val + " wins!";
+            cells.forEach(cell => {
+                cell.classList.add("disabled");
+            });
         }
     })
 }
