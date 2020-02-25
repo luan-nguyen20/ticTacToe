@@ -21,7 +21,9 @@ function checkVictory(){
                     [0,4,8],[2,4,6]];
 
     winCombo.forEach(combo => {
-        if(cells[combo[0]].textContent===cells[combo[1]].textContent && cells[combo[1]].textContent===cells[combo[2]].textContent && cells[combo[0]].textContent !== " "){
+        if(cells[combo[0]].textContent===cells[combo[1]].textContent 
+            && cells[combo[1]].textContent===cells[combo[2]].textContent 
+            && cells[combo[0]].textContent !== " "){
             alert("Player " + val + " wins!");
         }
     })
