@@ -74,6 +74,10 @@ and (max-device-width : 420px) {
         height: 15rem;
         width: 25rem;
     }
+
+    .cell{
+        font-size: 12rem;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
