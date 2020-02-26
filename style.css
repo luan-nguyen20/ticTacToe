@@ -55,12 +55,24 @@ header{
     pointer-events: none;
 }
 
-/* Smartphones ----------- */
+/* Smartphones portrait mode----------- */
 @media only screen
-and (min-width : 320px)
-and (max-width : 420px) {
+and (min-device-width : 320px)
+and (max-device-width : 420px) {
     header{
-        margin-top: 3rem;
+        font-size: 7rem;
+        margin-top: 20rem;
+    }
+
+    .board{
+        height: 45rem;
+        width: 45rem;
+    }
+
+    .restartBtn button{
+        font-size: 4rem;
+        height: 15rem;
+        width: 25rem;
     }
 }
 
