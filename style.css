@@ -80,10 +80,36 @@ and (max-device-width : 420px) {
     }
 }
 
+/* Smartphones (landscape)----------- */
+@media only screen
+and (min-device-width : 667px)
+and (max-device-width : 812px){
+    header{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .board{
+        margin-top: 0rem;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .restartBtn button{
+        font-size: 1.5rem;
+        margin-top: -2rem;
+        height: 4rem;
+        width: 10rem;
+    }
+
+    .cell{
+        font-size: 10rem;
+    }
+}
+
 /* iPads (portrait) ----------- */
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+and (device-width : 768px){
     header{
         font-size: 5rem;
         margin-top: 10rem;
