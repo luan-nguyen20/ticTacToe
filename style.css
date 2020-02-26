@@ -1,5 +1,6 @@
 html{
     background-color: chocolate;
+    height: 100%;
 }
 
 header{
@@ -57,7 +58,10 @@ header{
 /* Smartphones ----------- */
 @media only screen
 and (min-width : 320px)
-and (max-width : 414px) {
+and (max-width : 420px) {
+    header{
+        margin-top: 3rem;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
