@@ -51,10 +51,6 @@ header{
     width: 15rem;
 }
 
-.disabled{
-    pointer-events: none;
-}
-
 /* Smartphones (portrait)----------- */
 @media only screen
 and (min-device-width : 320px)
