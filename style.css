@@ -51,6 +51,13 @@ header{
     width: 15rem;
 }
 
+footer{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Smartphones (portrait)----------- */
 @media only screen
 and (min-device-width : 320px)
