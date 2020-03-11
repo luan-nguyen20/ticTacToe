@@ -115,10 +115,10 @@ function minimax(newBoard, player) {
 		newBoard[availCells[i]] = player;
 
 		if (player === comPlayer) {
-			var result = minimax(newBoard, humanPlayer);
+			let result = minimax(newBoard, humanPlayer);
 			move.score = result.score;
 		} else {
-			var result = minimax(newBoard, comPlayer);
+			let result = minimax(newBoard, comPlayer);
 			move.score = result.score;
 		}
 
@@ -138,7 +138,7 @@ function minimax(newBoard, player) {
 		}
 	} else { //choose move with lowest score when human is playing
 		let bestScore = Infinity;
-		for(var i = 0; i < moves.length; i++) {
+		for(let i = 0; i < moves.length; i++) {
 			if (moves[i].score < bestScore) {
 				bestScore = moves[i].score;
 				bestMove = i;
