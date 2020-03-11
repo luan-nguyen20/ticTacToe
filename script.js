@@ -137,7 +137,7 @@ function minimax(newBoard, player) {
 			}
 		}
 	} else { //choose move with lowest score when human is playing
-		var bestScore = Infinity;
+		let bestScore = Infinity;
 		for(var i = 0; i < moves.length; i++) {
 			if (moves[i].score < bestScore) {
 				bestScore = moves[i].score;
